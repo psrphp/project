@@ -1,0 +1,15 @@
+{
+    "name": "psrphp/project",
+    "description": "PsrPHP工程框架",
+    "version": "1.0.0",
+    "type": "project",
+    "license": "GPL-3.0",
+    "scripts": {
+        "post-package-install": "PsrPHP\\Framework\\Script::onInstall",
+        "post-package-update": "PsrPHP\\Framework\\Script::onUpdate",
+        "pre-package-uninstall": "PsrPHP\\Framework\\Script::onUnInstall"
+    },
+    "require": {
+        "psrphp/framework": "^1.0"
+    }
+}
