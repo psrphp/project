@@ -16,5 +16,5 @@ $session = new Session;
 $session->set('admin_auth', 1);
 
 $router = new Router;
-$url = str_replace(pathinfo(__FILE__, PATHINFO_BASENAME), 'index.php', $router->build('/ebcms/admin/index'));
+$url = str_replace(pathinfo(__FILE__, PATHINFO_BASENAME), 'index.php', $router->build('/psrphp/admin/index'));
 header('Location: ' . $url);
